@@ -232,7 +232,7 @@ extensions (patterns). Eg:
 
 
 (yas-global-mode 1)
-(yas/load-directory ".emacs.d/snippets")
+(yas/load-directory "~/.bake/packages/github.com/kyleburton/bake-recipies/files/emacs/snippets")
 ;; (yas/load-directory "software/clojure-snippets/snippets")
 
 (defun krb-ensure-buffer-exists (buffer-name)

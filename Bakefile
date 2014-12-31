@@ -13,3 +13,4 @@ function require_local_or_remote () {
 
 require_local_or_remote "emacs/cider.sh" "github.com/kyleburton/bake-recipies/emacs/cider.sh"
 require_local_or_remote "emacs/util.sh" "github.com/kyleburton/bake-recipies/emacs/util.sh"
+bake_package_install "github.com/kyleburton/bake-recipies/emacs/util.sh"

@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: resetns
+# key: resetns
+# --
+(doseq [s (map first (filter
+                      (fn [[s v]]
+                        (= *ns* (:ns (meta v))))
+                      (ns-map *ns*)))]
+  (ns-unmap *ns* s))
