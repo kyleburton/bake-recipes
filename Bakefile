@@ -1,0 +1,2 @@
+bake_require "github.com/kyleburton/bake-recipies/emacs/cider.sh"
+
