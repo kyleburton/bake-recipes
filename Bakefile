@@ -1,2 +1,15 @@
-bake_require "github.com/kyleburton/bake-recipies/emacs/cider.sh"
+#!/usr/bin/env bash
 
+function require_local_or_remote () {
+  local lfile="$1"
+  local remote="$2"
+  if [ -e "$lfile" ]; then
+    bake_require $lfile
+  else
+    bake_require "$remote"
+  fi
+}
+
+
+require_local_or_remote "emacs/cider.sh" "github.com/kyleburton/bake-recipies/emacs/cider.sh"
+require_local_or_remote "emacs/util.sh" "github.com/kyleburton/bake-recipies/emacs/util.sh"
