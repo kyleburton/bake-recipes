@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-CIDER_CIDER_VERISON="v0.8.2"
-CIDER_AC_CIDER_VERISON="0.2.1"
+CIDER_CIDER_VERISON="v0.13.0"
+CIDER_AC_CIDER_VERISON="0.2.3"
 
 function cider_pushd_to_local_path () {
   test -d $HOME/.emacs.d/krb || mkdir -p $HOME/.emacs.d/krb
@@ -16,8 +16,9 @@ function emacs-install-cider () {
   fi
 
   cd cider
-  git checkout master
-  git pull origin master
+  # git checkout master
+  # git pull origin master
+  git fetch
   git checkout $CIDER_CIDER_VERISON
   popd
 }
@@ -30,8 +31,9 @@ function emacs-install-ac-cider () {
   fi
 
   cd ac-cider
-  git checkout master
-  git pull origin master
+  # git checkout master
+  # git pull origin master
+  git fetch
   git checkout $CIDER_AC_CIDER_VERISON
   popd
 }
