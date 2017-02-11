@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CIDER_CIDER_VERISON="v0.13.0"
+CIDER_CIDER_VERISON="v0.14.0"
 CIDER_AC_CIDER_VERISON="0.2.3"
 
 function cider_pushd_to_local_path () {
